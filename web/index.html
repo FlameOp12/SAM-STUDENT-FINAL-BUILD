@@ -26,6 +26,30 @@
   <meta name="apple-mobile-web-app-title" content="frontend">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
   <meta name="google-signin-client_id" content="994240469555-8iu9le1ibvsbvi765qoqfbj3ks00s62b.apps.googleusercontent.com">
+  <meta http-equiv="Content-Security-Policy" 
+      content="
+        default-src 'self';
+        script-src 'self' 
+          https://www.gstatic.com 
+          https://apis.google.com 
+          https://accounts.google.com 
+          'unsafe-inline' 
+          'unsafe-eval' 
+          blob: 
+          data:;
+        style-src 'self' 
+          https://fonts.googleapis.com 
+          'unsafe-inline';
+        frame-src 'self' 
+          https://accounts.google.com;
+        connect-src 'self' 
+          http://10.195.250.147:5000 
+          https://identitytoolkit.googleapis.com 
+          https://securetoken.googleapis.com;
+        img-src 'self' 
+          https://lh3.googleusercontent.com;
+        font-src 'self' 
+          https://fonts.gstatic.com;">
 
 
 
